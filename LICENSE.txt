@@ -1,0 +1,31 @@
+LICENÇA PROPRIETÁRIA - TODOS OS DIREITOS RESERVADOS
+
+© 2026 Felipe Bogo. Todos os direitos reservados.
+
+AVISO LEGAL
+-----------
+
+Este trabalho (código, documentação, materiais educacionais e todo o seu conteúdo) é propriedade exclusiva de Felipe Bogo e está protegido pelas leis de direitos autorais.
+
+RESTRIÇÕES DE USO
+-----------------
+
+Sem a permissão expressa escrita do proprietário, é expressamente proibido:
+
+1. Reproduzir, copiar ou duplicar qualquer parte deste trabalho
+2. Modificar, adaptar ou criar trabalhos derivados
+3. Distribuir, vender, licenciar ou transferir cópias
+4. Usar para fins comerciais ou educacionais sem autorização
+5. Removar ou alterar esta licença ou avisos de copyright
+
+PERMISSÕES CONCEDIDAS
+---------------------
+
+É permitido visualizar e usar este repositório público para referência pessoal e educacional apenas. Qualquer outro uso requer permissão escrita explícita.
+
+AVISO DE ISENÇÃO
+----------------
+
+Este trabalho é fornecido "como está", sem qualquer garantia, expressa ou implícita.
+
+Para solicitar permissão ou dúvidas sobre uso, entre em contato com o autor.

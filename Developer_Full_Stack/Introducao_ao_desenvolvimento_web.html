@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Developer Full-Stack</h1>
+        <h2>Introdução ao Desenvolvimento Web</h2>
+        <h3>O que é HTML?</h3>
+        <p>HTML (HyperText Markup Language) é a linguagem de marcação utilizada para criar páginas web. Ele é responsável por estruturar o conteúdo da página, como textos, imagens, links, entre outros elementos.</p>
+        <strong>Estrutura básica de um documento HTML</strong>
+        <p>Um documento HTML é composto por uma estrutura básica que inclui as seguintes tags:</p>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: Declaração do tipo de documento.</li>
+            <li><code>&lt;html&gt;</code>: Tag que indica o início do documento HTML.</li>
+            <li><code>&lt;body&gt;</code>: Tag que contém o conteúdo visível da página.</li>
+        </ul>
+        <strong>Exemplo de código HTML</strong>
+        <p>A seguir, um exemplo de código HTML que utiliza as tags mencionadas:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Meu Primeiro Documento HTML&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+        &lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <p>Este código cria uma página HTML simples com um título e um parágrafo de texto.</p>
+
+    <p>Para executar um código utilizamos &lt;(preencher)&gt; para abrir a ação e &lt;/(preencher)&gt; para fecha-lá. Existem algumas ações que não são necessárias fechar, por exemplo, a tag &lt;br&gt;. Nesse caso, são chamadas de tags de auto-fechamento.</p> 
+
+    <h3>Corpo de texto e formatação</h3>
+    <p>Dentro do corpo de um documento HTML, podemos adicionar diversos elementos para formatar o texto e organizar o conteúdo. Alguns exemplos de formatação incluem:</p>
+    <ul>
+        <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: Tags de título, onde <code>&lt;h1&gt;</code> é o título mais importante e <code>&lt;h6&gt;</code> é o menos importante.</li>
+        <li><code>&lt;strong&gt;</code>: Tag para destacar texto em negrito.</li>
+        <li><code>&lt;em&gt;</code>: Tag para destacar texto em itálico.</li>
+        <li><code>&lt;p&gt;</code>: Tag para criar parágrafos de texto.</li>
+        <li><code>&lt;br&gt;</code>: Tag para inserir uma quebra de linha.</li>
+        <li><code>&lt;li&gt;</code>: Tag para criar itens de uma lista.</li>
+        <li><code>&lt;pre&gt;</code>: Tag para formatar texto em predefinição (monospace).</li> Isto é, o texto dentro da tag <code>&lt;pre&gt;</code> será exibido com espaçamento e formatação preservados, o que é útil para exibir código ou texto que requer uma formatação específica.
+        <li><code>&lt;ul&gt;</code>: Tag para criar listas não ordenadas.</li> 
+        <li><code>&lt;ol&gt;</code>: Tag para criar listas ordenadas.</li>      
+    </ul>
+        <strong>Observação:</strong> <code>&lt;strong&gt;</code> e <code>&lt;em&gt;</code> são tags de formatação semântica, ou seja, elas indicam o significado do conteúdo em vez de apenas o estilo visual. <br>
+        <strong>Observação:</strong> <code>&lt;br&gt;</code> é uma tag de auto-fechamento que insere uma quebra de linha.
+        <p>Com esses elementos, podemos criar páginas HTML bem estruturadas e formatadas. Por exemplo, </p>
+        <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;strong&gt;Texto em negrito&lt;/strong&gt;
+&lt;em&gt;Texto em itálico&lt;/em&gt;
+&lt;p&gt;Este é um parágrafo de texto.&lt;/p&gt;
+&lt;br&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p>Este código cria uma página HTML com um título principal, um subtítulo, texto em negrito, texto em itálico, um parágrafo de texto, uma quebra de linha e uma lista de itens.</p>
+
+<h3>Botões</h3>
+<p>Para criar um botão em HTML, utilizamos a tag <code>&lt;button&gt;</code>. O conteúdo dentro da tag <code>&lt;button&gt;</code> será o texto exibido no botão. Por exemplo:</p>
+<pre><code>&lt;button&gt;Clique aqui&lt;/button&gt;</code></pre>
+<p>Este código cria um botão com o texto "Clique aqui".</p>
+<p>Podemos também adicionar atributos ao botão para personalizá-lo, como o atributo <code>type</code> para definir o tipo do botão (por exemplo, "submit" para enviar um formulário) ou o atributo <code>onclick</code> para adicionar uma ação quando o botão for clicado. Por exemplo:</p>
+<pre><code>&lt;button type="submit" onclick="alert('Botão clicado!')&gt;Enviar&lt;/button&gt;</code></pre>
+<p>Este código cria um botão do tipo "submit" que exibe um alerta com a mensagem "Botão clicado!" quando é clicado. Podemos também utilizar o ambiente <code>&lt;Link&gt;</code> para criar links em botões, mas isso é mais comum em linguagens de programação como JavaScript ou CSS. Em HTML puro, os botões são usados principalmente para interações no próprio documento.</p>
+
+<h3>Imagens</h3>
+<p>Para inserir uma imagem em uma página HTML, utilizamos a tag <code>&lt;img&gt;</code>. A tag <code>&lt;img&gt;</code> é uma tag de auto-fechamento, o que significa que não precisa de uma tag de fechamento. Para inserir uma imagem, precisamos usar o atributo <code>src</code> para especificar o caminho da imagem e o atributo <code>alt</code> para fornecer uma descrição alternativa da imagem. Por exemplo:</p>
+<pre><code>&lt;img src="caminho_da_imagem.jpg" alt="Descrição da imagem" /&gt;</code></pre>
+<p>Este código insere uma imagem com o caminho "caminho_da_imagem.jpg" e a descrição "Descrição da imagem". Podemos também ajustar o tamanho da imagem utilizando os atributos <code>width</code> e <code>height</code>. Por exemplo:</p>
+<pre><code>&lt;img src="caminho_da_imagem.jpg" alt="Descrição da imagem" width="200" height="150" /&gt;</code></pre>
+<p>Este código insere uma imagem com o caminho "caminho_da_imagem.jpg", a descrição "Descrição da imagem" e ajusta o tamanho da imagem para 200 pixels de largura e 150 pixels de altura.</p>
+
+<h3>Links</h3>
+<p>Para criar um link em HTML, utilizamos a tag <code>&lt;a&gt;</code> com o atributo <code>href</code> para especificar o destino do link. O conteúdo dentro da tag <code>&lt;a&gt;</code> será o texto exibido como link. Por exemplo:</p>
+<pre><code>&lt;a href="https://www.exemplo.com"&gt;Clique aqui para visitar o site&lt;/a&gt;</code></pre>
+<p>Este código cria um link com o texto "Clique aqui para visitar o site" que direciona para "https://www.exemplo.com" quando clicado. Podemos também criar links para outras páginas dentro do mesmo site utilizando caminhos relativos. Por exemplo:</p>
+<pre><code>&lt;a href="pagina2.html"&gt;Ir para a Página 2&lt;/a&gt;</code></pre>
+<p>Este código cria um link com o texto "Ir para a Página 2" que direciona para "pagina2.html" quando clicado, assumindo que "pagina2.html" esteja no mesmo diretório do arquivo HTML atual.</p>
+
+<h3>Questões Importantes</h3>
+<ol>
+    <li>Por qual motivo o comando <code>&lt;img&gt;</code> possui uma barra (/) no final e o comando <code>&lt;br&gt;</code> não possui? Porque o comando <code>&lt;img&gt;</code> é um comando que pode conter atributos, como <code>src</code> e <code>alt</code>, e a barra (/) indica que o comando está sendo fechado. Já o comando <code>&lt;br&gt;</code> é um comando simples que não possui atributos, então não é necessário usar a barra (/) para fechá-lo.</li>
+</ol>
+    </body>
+</html>
