@@ -1,6 +1,6 @@
-# Estudos - Programação
+# Programming Studies
 
-Repositório contendo meus estudos e aprendizado em desenvolvimento web e programação.
+Repository containing my studies and learning in web development and programming.
 
 ## Estrutura do Repositório
 
