@@ -14,8 +14,10 @@
         <ul>
             <li><code>&lt;!DOCTYPE html&gt;</code>: Declaração do tipo de documento.</li>
             <li><code>&lt;html&gt;</code>: Tag que indica o início do documento HTML.</li>
+            <li><code>&lt;head&gt;</code>: Tag que contém informações sobre o documento, como o título e links para arquivos CSS ou JavaScript.</li>
             <li><code>&lt;body&gt;</code>: Tag que contém o conteúdo visível da página.</li>
         </ul>
+        <p><strong>Observação:</strong> O atributo rel é usado para especificar a relação entre o documento atual e o documento referenciado. Por exemplo, <code>rel="stylesheet"</code> indica que o link aponta para um arquivo de estilo CSS.</p>
         <strong>Exemplo de código HTML</strong>
         <p>A seguir, um exemplo de código HTML que utiliza as tags mencionadas:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -29,8 +31,8 @@
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
         <p>Este código cria uma página HTML simples com um título e um parágrafo de texto.</p>
-
-    <p>Para executar um código utilizamos &lt;(preencher)&gt; para abrir a ação e &lt;/(preencher)&gt; para fecha-lá. Existem algumas ações que não são necessárias fechar, por exemplo, a tag &lt;br&gt;. Nesse caso, são chamadas de tags de auto-fechamento.</p> 
+    
+    <p>As tags HTML são elementos que definem a estrutura e o conteúdo de uma página web. Cada tag é composta por um nome entre colchetes angulares, como &lt;h1&gt; ou &lt;p&gt;. As tags podem ser abertas e fechadas, como &lt;h1&gt; e &lt;/h1&gt;, ou podem ser de auto-fechamento, como &lt;br&gt;.</p>
 
     <h3>Corpo de texto e formatação</h3>
     <p>Dentro do corpo de um documento HTML, podemos adicionar diversos elementos para formatar o texto e organizar o conteúdo. Alguns exemplos de formatação incluem:</p>
@@ -87,5 +89,78 @@
 <ol>
     <li>Por qual motivo o comando <code>&lt;img&gt;</code> possui uma barra (/) no final e o comando <code>&lt;br&gt;</code> não possui? Porque o comando <code>&lt;img&gt;</code> é um comando que pode conter atributos, como <code>src</code> e <code>alt</code>, e a barra (/) indica que o comando está sendo fechado. Já o comando <code>&lt;br&gt;</code> é um comando simples que não possui atributos, então não é necessário usar a barra (/) para fechá-lo.</li>
 </ol>
+
+<h3>Estilização</h3>
+<p>Podemos estilizar as tags HTML adicionando na tag de entrada o atributo <code>style</code> e definindo propriedades. Por exemplo:</p>
+<pre><code>&lt;h1 style="color: blue;"&gt;Título em azul&lt;/h1&gt;</code></pre>
+<p>Este código estiliza o título com a cor azul.</p>
+
+Mas isso não é recomendado, pois mistura a estrutura do documento com a apresentação visual, o que pode dificultar a manutenção do código. Em vez disso, é melhor usar arquivos CSS externos para separar a estrutura do documento da apresentação visual. Desse modo, vale muito a pena estudarmos um pouco sobre a estrutura do CSS.</p>
+
+<h3>O que é CSS</h3>
+<p>CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para descrever a apresentação de um documento HTML. Ele permite que os desenvolvedores controlem a aparência visual das páginas web, como cores, fontes, espaçamento, layout e muito mais.</p>
+<p>O CSS é composto por regras de estilo que consistem em um seletor e um bloco de declarações. O seletor é usado para selecionar os elementos HTML que serão estilizados, enquanto o bloco de declarações contém as propriedades e valores que definem a aparência dos elementos selecionados. Por exemplo:</p>
+<pre><code>h1 {
+    color: blue;
+    font-size: 24px;
+}</code></pre>
+<p>Este código CSS estiliza todos os elementos <code>&lt;h1&gt;</code> com a cor azul e um tamanho de fonte de 24 pixels.</p>
+<p>O CSS pode ser aplicado a um documento HTML de várias maneiras, incluindo:</p>
+<ul>
+    <li>Estilos embutidos: Usando o atributo <code>style</code> diretamente nas tags HTML, como mostrado anteriormente.</li>
+    <li>Estilos internos: Colocando as regras de estilo dentro de uma tag <code>&lt;style&gt;</code> no cabeçalho do documento HTML.</li>
+    <li>Estilos externos: Criando um arquivo CSS separado e vinculando-o ao documento HTML usando a tag <code>&lt;link&gt;</code> no cabeçalho do documento HTML.</li>
+</ul>
+<p>A prática recomendada é usar estilos externos, pois isso permite uma melhor organização do código e facilita a manutenção e reutilização dos estilos em várias páginas do site.</p>
+
+<p>A utilização de estilos externos também melhora o desempenho da página, pois os arquivos CSS podem ser armazenados em cache pelo navegador, reduzindo o tempo de carregamento das páginas subsequentes.</p>
+<p>Temos várias formas de aplicar estilos em um elemento HTML usando CSS. A seguir, estão algumas das formas mais comuns:</p>
+<ul>
+    <li>Seletores de tipo: Estilizam todos os elementos de um determinado tipo. Por exemplo, <code>h1 { color: blue; }</code> estiliza todos os elementos <code>&lt;h1&gt;</code> com a cor azul.</li>
+    <li>Seletores de classe: Estilizam elementos com uma classe específica. Por exemplo, <code>.minha-classe { font-size: 18px; }</code> estiliza todos os elementos com a classe "minha-classe" com um tamanho de fonte de 18 pixels.</li>
+    <li>Seletores de ID: Estilizam um elemento com um ID específico. Por exemplo, <code>#meu-id { background-color: yellow; }</code> estiliza o elemento com o ID "meu-id" com um fundo amarelo.</li>
+</ul>
+<p>Uma classe é um conjunto de estilos que podem ser aplicados a vários elementos HTML. Isso permite reutilizar estilos em diferentes partes do documento, tornando o código mais organizado e fácil de manter.</p>
+<p>Um ID é um identificador único para um elemento HTML. Ele deve ser usado apenas uma vez em um documento e é útil para estilizar um elemento específico ou para criar links internos dentro da página.</p>
+
+<h3>Opções de Estilização Dentro do CSS</h3>
+<p>Dentro do CSS, existem diversas opções de estilização que podem ser aplicadas aos elementos HTML. Algumas das opções mais comuns incluem:</p>
+<ul>
+    <li><code>color</code>: Define a cor do texto.</li>
+    <li><code>background-color</code>: Define a cor de fundo de um elemento.</li>
+    <li><code>font-size</code>: Define o tamanho da fonte.</li>
+    <li><code>font-family</code>: Define a família de fontes a ser utilizada.</li>
+    <li><code>font-style</code>: Define o estilo da fonte (por exemplo, normal, italic, oblique).</li>
+    <li><code>margin</code>: Define a margem externa de um elemento.</li>
+    <li><code>padding</code>: Define o preenchimento interno de um elemento.</li>
+    <li><code>border</code>: Define a borda de um elemento.</li>
+    <li><code>border-radius</code>: Define o raio da borda, permitindo criar bordas arredondadas.</li>
+    <li><code>width</code>: Define a largura de um elemento.</li>
+    <li><code>height</code>: Define a altura de um elemento.</li>
+    <li><code>display</code>: Define como um elemento é exibido (por exemplo, block, inline, flex, grid).</li>
+    <li><code>background-color</code>: Define a cor de fundo de um elemento.</li>
+    <li><code>text-align</code>: Define o alinhamento do texto dentro de um elemento (por exemplo, left, right, center, justify).</li>
+    </ul>
+
+<p>Dentro dessas opções citadas acima podemos também utilizar valores específicos para cada propriedade, como cores em formato hexadecimal, RGB ou palavras-chave, tamanhos em pixels, porcentagens ou unidades relativas, entre outros. A combinação dessas propriedades e valores permite criar designs personalizados e responsivos para as páginas web.</p>
+<p>Por exemplo, para definir a cor de fundo de um elemento, podemos usar o valor <code>#FF0000</code> para vermelho, ou <code>rgb(255, 0, 0)</code> para o mesmo resultado em formato RGB. Para definir o tamanho da fonte, podemos usar valores como <code>16px</code> para um tamanho fixo ou <code>1.5em</code> para um tamanho relativo ao elemento pai.</p>
+
+<p>Para estilizar o Margin e o Padding, podemos usar valores específicos em pixels ou porcentagens. Por exemplo:</p>
+<ul>
+    <li><code>margin: 10px;</code>: Define uma margem de 10 pixels em todos os lados do elemento.</li>
+    <li><code>padding: 15px;</code>: Define um preenchimento de 15 pixels em todos os lados do elemento.</li>
+</ul>
+<p>Também podemos usar valores específicos para cada lado do elemento, como:</p>
+<ul>
+    <li><code>margin-top: 10px;</code>: Define uma margem de 10 pixels na parte superior do elemento.</li>
+    <li><code>margin-right: 20px;</code>: Define uma margem de 20 pixels na parte direita do elemento.</li>
+    <li><code>margin-bottom: 10px;</code>: Define uma margem de 10 pixels na parte inferior do elemento.</li>
+    <li><code>margin-left: 20px;</code>: Define uma margem de 20 pixels na parte esquerda do elemento.</li>
+    <li><code>padding-top: 15px;</code>: Define um preenchimento de 15 pixels na parte superior do elemento.</li>
+    <li><code>padding-right: 15px;</code>: Define um preenchimento de 15 pixels na parte direita do elemento.</li>
+    <li><code>padding-bottom: 15px;</code>: Define um preenchimento de 15 pixels na parte inferior do elemento.</li>
+    <li><code>padding-left: 15px;</code>: Define um preenchimento de 15 pixels na parte esquerda do elemento.</li>
+</ul>
+<p>Essas opções de estilização permitem criar layouts personalizados e responsivos para as páginas web, garantindo uma melhor experiência para os usuários em diferentes dispositivos e tamanhos de tela. Também pode ser feito colocando esses valores em uma única linha, como <code>margin: 10px 20px 10px 20px;</code> para definir margens específicas em cada lado do elemento. Lembrando de respeitar o padrão de ordem: top, right, bottom, left.</p> 
     </body>
 </html>
