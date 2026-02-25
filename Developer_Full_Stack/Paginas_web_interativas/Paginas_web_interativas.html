@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Páginas Web Interativas</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Developer Full-Stack</h1>
+        <h2>Páginas Web Interativas</h2>
+        <h3>O que é JavaScript?</h3>
+        <p>JavaScript é uma linguagem de programação que permite criar páginas web interativas. Com JavaScript, podemos adicionar funcionalidades dinâmicas às nossas páginas, como animações, validação de formulários, manipulação de eventos e muito mais.</p>
+        <p>Um documento JavaScript é da mesma forma que criamos um arquivo CSS para estilizar nossas páginas HTML, podemos criar um arquivo JavaScript para adicionar interatividade.</p>
+        <p>Para adicionar JavaScript a uma página HTML, podemos usar a tag <code>&lt;script&gt;</code> dentro do arquivo HTML ou criar um arquivo separado com a extensão <code>.js</code> e vinculá-lo ao HTML.</p>
+
+         <h3>Tipos</h3>
+        <p>Em JavaScript, existem vários tipos de dados, incluindo:</p>
+        <ul>
+            <li><strong>String:</strong> representa texto, delimitado por aspas simples ou duplas. Exemplo: <code>"Olá, mundo!"</code></li>
+            <li><strong>Número:</strong> representa valores numéricos, como inteiros e decimais. Exemplo: <code>42</code> ou <code>3.14</code></li>
+            <li><strong>Booleano:</strong> representa valores lógicos, que podem ser <code>true</code> ou <code>false</code>.</li>
+            <li><strong>Objeto:</strong> representa uma coleção de propriedades e métodos. Exemplo: <code>{ nome: "Felipe", idade: 30 }</code></li>
+        </ul>
+
+        <h3>String</h3>
+        <p>Em JavaScript, uma string é uma sequência de caracteres usada para representar texto. As strings são delimitadas por aspas simples (' ') ou aspas duplas (" "). Por exemplo:</p>
+        <pre><code>"Olá, mundo!";
+'Felipe';</code></pre>
+        <p>Neste exemplo, temos duas strings: "Olá, mundo!" e 'Felipe'. As strings podem conter letras, números, espaços e caracteres especiais.</p>
+        
+        <h3>Variável</h3>
+        <p>Um valor é um dado que pode ser armazenado em uma variável.</p>
+        <p>Em JavaScript, uma variável é um contêiner que armazena um valor. Podemos criar uma variável usando a palavra-chave <code>let</code> ou <code>const</code>. Por exemplo:</p>
+        <pre><code>let nome = "Felipe";
+const idade = 30;</code></pre>
+        <p>Neste exemplo, criamos uma variável chamada <code>nome</code> que armazena a string "Felipe" e uma variável constante chamada <code>idade</code> que armazena o número 30.</p>
+
+        <p>As variáveis podem ser usadas para armazenar diferentes tipos de dados, como números, strings, booleanos, objetos e muito mais.</p>
+        <p>A palavra-chave <code>const</code> é usada para declarar variáveis cujo valor não pode ser reatribuído após a inicialização. Ou seja, uma vez atribuído um valor a uma variável <code>const</code>, ele não pode ser alterado.</p>
+        <p>Por exemplo:</p>
+        <pre><code>const pi = 3.14;
+pi = 3.14159; // Isso causará um erro, pois pi é uma constante e não pode ser reatribuída.</code></pre>
+        <p>Já a palavra-chave <code>let</code> é usada para declarar variáveis que podem ser reatribuídas. Ou seja, o valor de uma variável declarada com <code>let</code> pode ser alterado ao longo do tempo.</p>
+        <p>Por exemplo:</p>
+        <pre><code>let contador = 0;
+contador = contador + 1; // Isso é permitido, pois contador é uma variável declarada com let e pode ser reatribuída.</code></pre>
+        <p>Em resumo, use <code>const</code> para variáveis cujo valor não deve mudar e <code>let</code> para variáveis que podem ser reatribuídas ao longo do tempo.</p>
+
+        <p>Para declarar números e booleanos não precisamos usar as aspas, pois eles são representados diretamente como valores numéricos.</p>
+        <p>Por exemplo:</p>
+        <pre><code>let idade = 30; // número
+let ativo = true; // booleano</code></pre>
+        <p>Neste exemplo, a variável <code>idade</code> armazena o número 30 e a variável <code>ativo</code> armazena o valor booleano true.</p> 
+        
+        <h3>Operadores Aritméticos, Atribuição e Comparação</h3>
+        <p>Em JavaScript, os operadores são símbolos ou palavras-chave que realizam operações em valores ou variáveis. Existem vários tipos de operadores, incluindo:</p>
+        <ul>
+            <li><strong>Operadores aritméticos:</strong> usados para realizar operações matemáticas, como adição (+), subtração (-), multiplicação (*), divisão (/) e módulo (%).</li>
+            <li><strong>Operadores de comparação:</strong> usados para comparar valores, como igual a (==), estritamente igual a (===), diferente de (!=), estritamente diferente de (!==), maior que (>), menor que (<), maior ou igual a (>=) e menor ou igual a (<=).</li>
+            <li><strong>Operador de Atribuição:</strong> usado para atribuir valores a variáveis, como igual (=).</li>
+            <li><strong>Operador de Negação:</strong> usado para inverter o valor lógico de uma expressão, como !true que resulta em false.</li>
+        </ul>
+        <p>Exemplo de uso dos operadores:</p>
+        <pre><code>let a = 10;
+let b = 5;
+let soma = a + b; // 15
+let subtracao = a - b; // 5
+let multiplicacao = a * b; // 50
+let divisao = a / b; // 2
+let modulo = a % b; // 0
+
+let igual = a == b; // false
+let estritamenteIgual = a === b; // false
+let diferente = a != b; // true
+let estritamenteDiferente = a !== b; // true
+let maior = a > b; // true
+let menor = a < b; // false
+let maiorOuIgual = a >= b; // true
+let menorOuIgual = a <= b; // false
+
+let atribuicao = a = b; // 5
+</code></pre>
+        <p>Neste exemplo, realizamos várias operações aritméticas, de comparação e de atribuição usando os operadores mencionados.</p>
+
+        <h3>Console.log()</h3>
+        <p>A função <code>console.log()</code> é usada para imprimir mensagens no console do navegador. Ela é útil para depuração e para exibir informações durante o desenvolvimento de uma aplicação JavaScript.</p>
+        <p>Exemplo de uso do console.log():</p>
+        <pre><code>let nome = "Felipe";
+console.log("Olá, " + nome + "!"); // Imprime "Olá, Felipe!"
+</code></pre>
+        <p>Neste exemplo, usamos <code>console.log()</code> para imprimir uma mensagem de saudação que inclui o valor da variável <code>nome</code>.</p>
+
+    </body>
+</html>
