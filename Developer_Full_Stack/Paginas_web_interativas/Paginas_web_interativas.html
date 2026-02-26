@@ -57,7 +57,7 @@ let ativo = true; // booleano</code></pre>
             <li><strong>Operadores aritméticos:</strong> usados para realizar operações matemáticas, como adição (+), subtração (-), multiplicação (*), divisão (/) e módulo (%).</li>
             <li><strong>Operadores de comparação:</strong> usados para comparar valores, como igual a (==), estritamente igual a (===), diferente de (!=), estritamente diferente de (!==), maior que (>), menor que (<), maior ou igual a (>=) e menor ou igual a (<=).</li>
             <li><strong>Operador de Atribuição:</strong> usado para atribuir valores a variáveis, como igual (=).</li>
-            <li><strong>Operador de Negação:</strong> usado para inverter o valor lógico de uma expressão, como !true que resulta em false.</li>
+            <li><strong>Operadores Lógicos:</strong> usados para combinar expressões lógicas, como AND (&&), OR (||) ou NOT (!).</li>
         </ul>
         <p>Exemplo de uso dos operadores:</p>
         <pre><code>let a = 10;
@@ -80,7 +80,34 @@ let menorOuIgual = a <= b; // false
 let atribuicao = a = b; // 5
 </code></pre>
         <p>Neste exemplo, realizamos várias operações aritméticas, de comparação e de atribuição usando os operadores mencionados.</p>
+        <p>Também podemos somar strings:</p>
+        <pre><code>let saudacao = "Olá, ";
+let nome = "Felipe";
+let mensagem = saudacao + nome; // "Olá, Felipe"
+</code></pre>
+        <p>Neste exemplo, usamos o operador de adição (+) para concatenar as strings "Olá, " e "Felipe", resultando na mensagem "Olá, Felipe".</p>
+        <p>Além disso, podemos usar o operador de adição para somar números e strings juntos. Quando um dos operandos é uma string, o JavaScript converte o outro operando em uma string e realiza a concatenação. Por exemplo:</p>
+        <pre><code>let idade = 30;
+let mensagemIdade = "Tenho " + idade + " anos."; // "Tenho 30 anos."
+</code></pre>
+        <p>Neste exemplo, o número 30 é convertido em uma string e concatenado com as outras strings para formar a mensagem "Tenho 30 anos."</p>
+        <p>Essa conversão automática de tipos é conhecida como <strong>coerção de tipo</strong> em JavaScript.</p>
+        <p>É importante estar ciente dessa coerção de tipo ao usar operadores, especialmente o operador de adição, para evitar resultados inesperados.</p>
+        <p>E somamos também, strings com booleanos:</p>
+        <pre><code>let ativo = true;
+let mensagemAtivo = "O usuário está " + ativo; // "O usuário está true"
+</code></pre>
+        <p>Neste exemplo, o valor booleano true é convertido em uma string e concatenado com a outra string para formar a mensagem "O usuário está true".</p>
 
+        <p>O operador de atribuição (=) é usado para atribuir valores a variáveis. Por exemplo, <code>let idade = 30;</code></p>
+
+        <p>Os operadores lógicos são usados para combinar expressões lógicas, como AND (&&), OR (||) ou NOT (!). Por exemplo,
+<pre><code>let resultado = true && false;</code>, 
+<code>let resultadoOu = true || false;</code>,
+<code>let resultadoNot = !true;</code></pre> </p>
+        <p>Usando o parêntese, podemos agrupar expressões lógicas para controlar a ordem de avaliação e negar um conjunto de expressões. Por exemplo, 
+<pre><code>let resultado = (true || false) && !false;</code>
+<code>let outroResultado = !(true && false) || true;</code></pre></p>
         <h3>Console.log()</h3>
         <p>A função <code>console.log()</code> é usada para imprimir mensagens no console do navegador. Ela é útil para depuração e para exibir informações durante o desenvolvimento de uma aplicação JavaScript.</p>
         <p>Exemplo de uso do console.log():</p>
@@ -88,6 +115,48 @@ let atribuicao = a = b; // 5
 console.log("Olá, " + nome + "!"); // Imprime "Olá, Felipe!"
 </code></pre>
         <p>Neste exemplo, usamos <code>console.log()</code> para imprimir uma mensagem de saudação que inclui o valor da variável <code>nome</code>.</p>
+        <p>O console.log é usado apenas para ver o resultado no console do navegador e não afeta o conteúdo da página.</p>
 
+        <h3>Condicionais</h3>
+        <p>As estruturas condicionais permitem executar diferentes blocos de código com base em uma condição. A estrutura mais comum é o <code>if</code>. Por exemplo:</p>
+        <pre><code>let idade = 18;
+if (idade >= 18) {
+    console.log("Você é maior de idade.");
+}
+ <p>Se a idade for maior que 18, a mensagem "Você é maior de idade." será exibida no console. Caso contrário, a mensagem não será exibida.</p>
+ <p>A estrutura da condicional é composta por uma expressão condicional entre parênteses e um bloco de código entre chaves. Considerando que um bloco de código é um conjunto de instruções que serão executadas se a condição for verdadeira.</p>
+<p>Também podemos usar a estrutura <code>else</code> para executar um bloco de código alternativo quando a condição do <code>if</code> for falsa. Por exemplo:</p>
+<pre><code>let idade = 16;
+if (idade >= 18) {
+    console.log("Você é maior de idade.");
+} else {
+    console.log("Você é menor de idade.");
+}</code></pre>
+<p>Neste exemplo, se a idade for menor que 18, a mensagem "Você é menor de idade." será exibida no console.</p>
+<p>Logo, a condicional <code>else</code> é ativada quando a condição do <code>if</code> é falsa.</p>
+<p>Podemos também usar a estrutura <code>else if</code> para testar múltiplas condições. Por exemplo:</p>
+<pre><code>let idade = 20;
+if (idade < 18) {
+    console.log("Você é menor de idade.");
+} else if (idade < 65) {
+    console.log("Você é adulto.");
+} else {
+    console.log("Você é idoso.");
+}</code></pre>
+<p>Neste exemplo, se a idade for menor que 18, a mensagem "Você é menor de idade." será exibida. Se a idade for entre 18 e 64, a mensagem "Você é adulto." será exibida. Caso contrário, a mensagem "Você é idoso." será exibida.</p>
+<p>Podemos utilizar a estrutura <code>else if</code> múltiplas vezes para testar várias condições em sequência. Por exemplo,</p>
+<pre><code>let nota = 85;
+if (nota >= 90) {
+    console.log("Excelente!");
+} else if (nota >= 80) {
+    console.log("Muito bom!");
+} else if (nota >= 70) {
+    console.log("Bom!");
+} else if (nota >= 60) {
+    console.log("Suficiente!");
+} else {
+    console.log("Insuficiente!");
+}</code></pre>
+<p>Neste exemplo, a nota é avaliada em várias faixas para determinar a mensagem apropriada a ser exibida no console.</p>
     </body>
 </html>
